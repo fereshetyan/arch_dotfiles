@@ -1,0 +1,23 @@
+input {
+    keyboard {
+        xkb {
+            layout "us,ru,am"
+           	variant ",phonetic,phonetic-alt"
+            options "grp:alt_shift_toggle"
+        }
+        numlock
+    }
+
+    touchpad {
+        tap
+        dwt
+        natural-scroll
+        scroll-method "two-finger"
+    }
+
+    mouse {
+        accel-speed 0
+    }
+
+    focus-follows-mouse
+}

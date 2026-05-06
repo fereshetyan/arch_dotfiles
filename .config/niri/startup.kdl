@@ -1,0 +1,16 @@
+// Автозапуск программ
+
+spawn-at-startup "quickshell" "-c" "/home/fereshetyan/.config/quickshell/noctalia-shell/"
+
+spawn-at-startup "noctalia"
+
+spawn-sh-at-startup "pkill kded6"
+
+hotkey-overlay { skip-at-startup; }
+
+spawn-at-startup "Telegram" "-startintray"
+
+environment {
+	QT_QPA_PLATFORM "wayland"
+	QT_QPA_PLATFORMTHEME "qt6ct"
+}

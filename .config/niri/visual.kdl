@@ -1,0 +1,21 @@
+// Визуальные эффекты: focus ring, border, shadow, blur и т.д.
+
+layout {
+    focus-ring {
+        width 2
+        active-color "#89b4fa"
+        inactive-color "#45475a"
+    }
+
+    border {
+        width 0
+    }
+
+    shadow {
+        on
+        softness 25
+        spread 8
+        offset x=0 y=8
+        color "#00000040"
+    }
+}

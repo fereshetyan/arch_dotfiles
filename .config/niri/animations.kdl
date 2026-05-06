@@ -1,0 +1,31 @@
+animations {
+    // Общая скорость всех анимаций
+    slowdown 1.0        // 0.8 = быстрее, 1.3 = плавнее
+
+    // Основные поддерживаемые анимации
+    window-open {
+        duration-ms 180
+        curve "ease-out-cubic"
+    }
+
+    window-close {
+        duration-ms 160
+        curve "ease-out-quad"
+    }
+
+    workspace-switch {
+        duration-ms 250
+        curve "ease-out-cubic"
+    }
+
+    // Опционально (если хочешь):
+    // focus-change {
+    //     duration-ms 120
+    //     curve "ease-out-cubic"
+    // }
+
+    // window-resize {
+    //     duration-ms 180
+    //     curve "ease-out-cubic"
+    // }
+}
