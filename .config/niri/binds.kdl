@@ -12,6 +12,7 @@ binds {
     Mod+E { spawn "nautilus"; }
     Mod+V { spawn-sh "qs -c noctalia-shell ipc call plugin:clipper toggle"; }
     Mod+D { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
+    Mod+S { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"; }
     Mod+L { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
     Super+Alt+S allow-when-locked=true { spawn-sh "pkill orca || exec orca"; }
     XF86Calculator { spawn "gnome-calculator"; }
