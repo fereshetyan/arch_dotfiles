@@ -42,14 +42,14 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0.93,
+        "backgroundOpacity": 0.7000000000000001,
         "barType": "simple",
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
-        "contentPadding": 28,
-        "density": "default",
+        "contentPadding": 8,
+        "density": "comfortable",
         "displayMode": "always_visible",
-        "enableExclusionZoneInset": true,
+        "enableExclusionZoneInset": false,
         "fontScale": 1,
         "frameRadius": 12,
         "frameThickness": 8,
@@ -63,7 +63,7 @@
         ],
         "mouseWheelAction": "volume",
         "mouseWheelWrap": true,
-        "outerCorners": true,
+        "outerCorners": false,
         "position": "top",
         "reverseScroll": false,
         "rightClickAction": "controlCenter",
@@ -74,7 +74,7 @@
         "showCapsule": false,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
-        "useSeparateOpacity": false,
+        "useSeparateOpacity": true,
         "widgetSpacing": 3,
         "widgets": {
             "center": [
@@ -93,6 +93,16 @@
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
                     "useCustomFont": false
+                },
+                {
+                    "colorizeDistroLogo": false,
+                    "colorizeSystemIcon": "none",
+                    "colorizeSystemText": "none",
+                    "customIconPath": "",
+                    "enableColorization": true,
+                    "icon": "noctalia",
+                    "id": "ControlCenter",
+                    "useDistroLogo": false
                 }
             ],
             "left": [
@@ -124,14 +134,14 @@
                     "id": "SystemMonitor",
                     "showCpuCores": false,
                     "showCpuFreq": false,
-                    "showCpuTemp": true,
+                    "showCpuTemp": false,
                     "showCpuUsage": true,
                     "showDiskAvailable": false,
                     "showDiskUsage": false,
                     "showDiskUsageAsPercent": false,
                     "showGpuTemp": false,
                     "showLoadAverage": false,
-                    "showMemoryAsPercent": false,
+                    "showMemoryAsPercent": true,
                     "showMemoryUsage": true,
                     "showNetworkStats": true,
                     "showSwapUsage": false,
@@ -144,7 +154,7 @@
                     "hideMode": "hidden",
                     "hideWhenIdle": false,
                     "id": "MediaMini",
-                    "maxWidth": 250,
+                    "maxWidth": 150,
                     "panelShowAlbumArt": true,
                     "scrollingMode": "hover",
                     "showAlbumArt": true,
@@ -250,26 +260,6 @@
                     "iconColor": "none",
                     "id": "Brightness",
                     "textColor": "none"
-                },
-                {
-                    "colorizeSystemIcon": "primary",
-                    "colorizeSystemText": "none",
-                    "customIconPath": "",
-                    "enableColorization": true,
-                    "icon": "rocket",
-                    "iconColor": "none",
-                    "id": "Launcher",
-                    "useDistroLogo": false
-                },
-                {
-                    "colorizeDistroLogo": false,
-                    "colorizeSystemIcon": "primary",
-                    "colorizeSystemText": "none",
-                    "customIconPath": "",
-                    "enableColorization": true,
-                    "icon": "noctalia",
-                    "id": "ControlCenter",
-                    "useDistroLogo": true
                 }
             ]
         }
@@ -434,7 +424,7 @@
         "enableBlurBehind": true,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": false,
-        "enableShadows": true,
+        "enableShadows": false,
         "forceBlackScreenCorners": false,
         "iRadiusRatio": 1,
         "keybinds": {
@@ -461,7 +451,7 @@
                 "Up"
             ]
         },
-        "language": "ru",
+        "language": "",
         "lockOnSuspend": true,
         "lockScreenAnimations": false,
         "lockScreenBlur": 0,
@@ -547,7 +537,7 @@
     },
     "noctaliaPerformance": {
         "disableDesktopWidgets": true,
-        "disableWallpaper": true
+        "disableWallpaper": false
     },
     "notifications": {
         "backgroundOpacity": 1,
@@ -555,7 +545,7 @@
         "criticalUrgencyDuration": 15,
         "density": "default",
         "enableBatteryToast": true,
-        "enableKeyboardLayoutToast": true,
+        "enableKeyboardLayoutToast": false,
         "enableMarkdown": false,
         "enableMediaToast": false,
         "enabled": true,
@@ -588,7 +578,8 @@
         "enabledTypes": [
             0,
             1,
-            2
+            2,
+            3
         ],
         "location": "top_right",
         "monitors": [
@@ -694,11 +685,27 @@
         "activeTemplates": [
             {
                 "enabled": true,
-                "id": "qt"
+                "id": "kitty"
+            },
+            {
+                "enabled": true,
+                "id": "telegram"
+            },
+            {
+                "enabled": true,
+                "id": "cava"
+            },
+            {
+                "enabled": true,
+                "id": "niri"
             },
             {
                 "enabled": true,
                 "id": "gtk"
+            },
+            {
+                "enabled": true,
+                "id": "qt"
             }
         ],
         "enableUserTheming": false
@@ -709,7 +716,7 @@
         "fontDefaultScale": 1,
         "fontFixed": "monospace",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 0.93,
+        "panelBackgroundOpacity": 0.7000000000000001,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": true,
         "settingsPanelMode": "attached",
@@ -752,13 +759,13 @@
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
-        "useWallhaven": true,
-        "viewMode": "recursive",
+        "useWallhaven": false,
+        "viewMode": "single",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "archlinux",
+        "wallhavenQuery": "bmw most",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",
